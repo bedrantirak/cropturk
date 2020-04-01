@@ -1,0 +1,62 @@
+﻿@model Product
+<style>
+    .div-card{
+        height:500px;
+        width:400px;
+       border-color:black;
+        box-shadow:3px 5px 5px black,10px 10px 25px white,0 10px 10px white;
+        text-align:center;
+        border-radius:10px;        
+    }
+     .bg-gradient-primary-p {
+        background-color: #808080;
+        background-image: linear-gradient(180deg,#808080 10%,#ffffff 100%);        
+        border-radius:10px;
+        border-color:black;
+        box-shadow:5px 5px 1px black,10px 10px 25px white,0 10px 10px white;
+    }
+    .prdct-bttn {
+        box-shadow: 1px 1px 2px black,0 0 25px white,0 0 5px white;
+        color: black;
+        border-color: white;
+        
+    }
+    .div-card-pic{
+         height:500px;
+         width:398px;            
+        border-radius:10px; 
+        border-color:blue;
+    }
+</style>
+
+<body class="bg-gradient-primary-p" >
+    <div class="col-md-6">
+        <div class="card mb-4 div-card">
+
+            <img class="div-card-pic" src="~/img/@Model.ImageUrl" alt="@Model.Name" />
+            <div class="card-body">
+                <h4 class="card-title font-italic">
+                    <a href="/Shop/Details/@Model.Id">@Model.Name</a>
+                </h4>
+                <small class="text-muted">
+                    <i class="fas fa-lira-sign"></i> @Model.Price
+                </small>
+            </div>
+            <div class="card-footer text-center">
+                <a asp-controller="Shop" asp-action="Details" asp-route-id="@Model.Id" class="btn btn-outline-primary btn-l prdct-bttn font-weight-bold ">Detay</a>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <form asp-controller="Cart" asp-action="AddToCart" method="post" style="display:inline;">
+                        <input type="hidden" name="productId" value="@Model.Id" />
+                        <input type="hidden" name="quantity" value="1" />
+                        <button type="submit" class="btn btn-outline-primary btn-sm ml-3 prdct-bttn ">Sepete Ekle</button>
+                    </form>
+
+                }
+
+
+            </div>
+        </div>
+
+    </div>
+</body>

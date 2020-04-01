@@ -1,0 +1,95 @@
+﻿@model ProductDetailsModel
+@{
+    ViewData["Title"] = "Details";
+}
+<style>
+    .bg-gradient-primary {
+        background-color: #808080;
+        background-image: linear-gradient(180deg,#b2b2b2 1%,#ffffff 100%);
+        background-size: auto;
+    }
+    .btn-user{
+            font-size:1.2rem;
+            border-radius:10rem;
+            padding:0.2rem 1rem;
+        }
+    .font-gold{
+         border-radius:10px;
+        border-color:black;
+        box-shadow:5px 5px 4px black,10px 10px 25px white,0 10px 10px white;        
+    }
+   .overlay{
+       position:absolute;
+       bottom:0;
+       background:rgb(0,0,0);
+       background:rgba(0,0,0,0.5);
+       color:#f1f1f1;
+       width:auto;       
+       opacity:1;
+       color:white;
+       font-size:20px;
+       padding:20px;
+       text-align:center;
+   }
+   
+   
+</style>
+<body class="bg-gradient-primary">
+
+    <div class="row">
+        <div class="col-md-3 ">
+            <img src="~/img/@Model.Product.ImageUrl" alt="@Model.Product.Name" class="img-fluid font-gold " />
+            <div class="overlay">Ürüne ait diğer görseller için aşağıya kaydırın.</div>
+        </div>
+        <div class="col-md-9 mt-3">
+            <span class="h4 font-italic">Ürün,</span>
+            <h1 class="mb-3 font-italic">
+                @Model.Product.Name
+            </h1>
+            <hr class="font-gold" />
+            <span class="h4 mb-2 font-italic">Fiyat</span>
+            <div class="mb-3">
+                <h4 class="text-secondary mb-3 font-italic">
+                    @Model.Product.Price TL
+                </h4>
+
+                <form asp-controller="Cart" asp-action="AddToCart" method="post" class="form-inline">
+
+                    <input type="hidden" name="productId" value="@Model.Product.Id" />
+                    <div class="input-group mb-3">
+                        <input type="number" name="quantity" class="form-control" value="1" min="1" step="1" style="width:100px;" />
+                        <div class="input-group-append ">
+                            <button type="submit" class="btn btn-primary btn-user">
+                                <i class="fas fa-cart-plus"></i> Sepete ekle
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                @*<button type="submit" class="btn btn-success btn-lg">
+                <i class="fas fa-shopping-cart"></i>
+                Add To Cart
+            </button>*@
+
+            </div>
+
+            <hr class="font-gold" />
+            <span class="h4 font-italic">Kategori</span>
+            <hr />
+            @foreach (var category in Model.Categories)
+            {
+                <a href="#" class="btn btn-link p-0 mb-3">@category.Name  / </a>
+            }
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <p class="p-3">
+                @Html.Raw(Model.Product.Description)
+            </p>
+        </div>
+
+    </div>
+
+    </body>

@@ -1,0 +1,79 @@
+﻿@model List<OrderListModel>
+@{
+    ViewData["Title"] = "GetOrders";
+}
+<style>
+    .bg-gradient-primary-test {
+        background-color: #808080;
+        background-image: linear-gradient(180deg,#808080 10%,#ffffff 100%);
+        background-size:auto;
+    }
+</style>
+<body class="bg-gradient-primary-test">
+
+    <h1>Siparişler</h1>
+    <hr />
+    @foreach (var order in Model)
+    {
+        <table class="table table-bordered table-sm mb-3">
+            <thead class=" bg-primary text-white">
+                <tr>
+                    <td colspan="2">Sipariş Id: #@order.OrderId</td>
+                    <th>Fiyat</th>
+                    <th>Adet</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var orderItem in order.OrderItems)
+                {
+                    <tr>
+                        <td style="width:60px;">
+                            <img src="~/img/@orderItem.ImageUrl" width="40" />
+                        </td>
+                        <td>
+                            @orderItem.Name
+                        </td>
+                        <td>
+                            @orderItem.Price
+                        </td>
+                        <td>
+                            @orderItem.Quantity
+                        </td>
+
+                    </tr>
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Müştleri İsmi</td>
+                    <td>@order.FirstName  @order.LastName</td>
+                    <td rowspan="3">Toplam @order.TotalPrice()</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Adres</td>
+                    <td>@order.Address  @order.City</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Telefon</td>
+                    <td>@order.Phone </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Email</td>
+                    <td>@order.Email </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Sipariş Numarası</td>
+                    <td>@order.OrderNumber </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Ödeme tipi</td>
+                    <td>@order.PaymentTypes </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Sipariş durumu</td>
+                    <td>@order.OrderState </td>
+                </tr>
+            </tfoot>
+        </table>
+    }
+    </body>

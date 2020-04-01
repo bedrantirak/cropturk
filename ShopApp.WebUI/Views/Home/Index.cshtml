@@ -1,0 +1,76 @@
+﻿@model ProductListModel
+
+
+<style>
+    .bg-gradient-primary-t {
+        background-color: #b2b2b2;
+        background-image: linear-gradient(180deg,#b2b2b2 10%,#ffffff 100%);
+        background-size: auto;
+    }
+
+    .test-b {
+        box-shadow: 1px 1px 2px white,0 0 25px white,0 0 5px white;
+    }
+
+    .nav-text-lg {
+        font-size: 3em;
+        text-transform: capitalize;
+        text-align: left;
+        color: #7d6a57;
+        text-shadow: 5px 2px 5px white,0 0 50px white,0 0 20px white;
+    }
+
+    .prdct-bttn {
+        box-shadow: 1px 1px 2px white,0 0 25px white,0 0 5px white;
+        color: black;
+        border-color: white;
+    }
+</style>
+
+
+<body class="bg-gradient-primary-t">
+    <div class="row ">
+        <div class="col-md-3 nav-text-lg h1 mb-5 mt-2 ">
+            <i class="fas fa-crop-alt"></i> Cropturk
+        </div>
+        <div class="col-md-9 test-b mb-2">
+            <h4 >Deneme Sürecindedir!</h4>
+           <h4> Alışveriş yapamazsınız ama kayıt olup giriş yaparak ürün sipariş işlemleri yapabilirsiniz.</h4>
+            <h5>Görüş ve önerileriniz için info@bedrantirak.com mail adresi ile iletişime geçebilirsiniz.</h5>
+           
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-3">
+            @await Component.InvokeAsync("CategoryList")
+
+            @if (!User.Identity.IsAuthenticated)
+            {
+                <div class="mt-4">
+                    <div>
+                        <a class="btn btn-outline-primary btn-sm prdct-bttn mb-2" asp-controller="Account" asp-action="Login">Giriş Yap</a>
+                    </div>
+                    <div class="mb-2">
+                        <span>Üye değil misin?</span>
+                        <a class="btn btn-outline-primary btn-sm prdct-bttn" asp-controller="Account" asp-action="Register">Hemen Kayıt Ol</a>
+                    </div>
+                </div>
+            }
+        </div>
+        <div class="col-md-9">
+            <partial name="_slider" />
+            <div class="row ">
+
+                @foreach (var product in Model.Products)
+                {
+                    <partial name="_product" for="@product" />
+
+                }
+            </div>
+        </div>
+
+    </div>
+
+</body>

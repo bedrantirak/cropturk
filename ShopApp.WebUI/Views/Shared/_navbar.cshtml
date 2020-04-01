@@ -1,0 +1,95 @@
+﻿
+<style>
+    .bg-nav {
+        background-image: linear-gradient(180deg,white 20%,black 110%);
+        background-size: cover;
+        border-radius: 30px;
+    }
+
+    .nav-text {
+        font-size: 2em;
+        text-transform: capitalize;
+        color: black;
+        text-shadow: 2px 2px #7d6a57;
+    }
+
+    .nav-text-item {
+        color: black;
+        font-size: 1.3em;
+    }
+    @@media screen and (max-width:64em) and (min-width:20em){
+        #simple_menu{
+        
+         margin-top:23px;
+        }
+    }
+</style>
+<nav class="navbar navbar-expand-lg bg-nav navbar-light  fixed-top">
+    <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active ">
+                <a class="nav-link nav-text ml-0" href="/"><i class="fas fa-crop-alt h2"> </i><span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link nav-text-item ml-3 font-italic font-weight-bold text-dark" href="/">Anasayfa <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item  ">
+                <a asp-controller="Shop" asp-action="List" class="nav-link nav-text-item ml-3 font-italic font-weight-bold text-dark">Ürünler</a>
+            </li>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <li class="nav-item">
+                    <a class="nav-link ml-3 nav-text-item font-italic font-weight-bold text-dark" asp-controller="Cart" asp-action="Index">Sepetim</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ml-3 nav-text-item font-italic font-weight-bold text-dark" asp-controller="Cart" asp-action="GetOrders">Siparişler</a>
+                </li>
+                if (User.IsInRole("admin"))
+                {
+
+                    <li class="nav-item">
+                        <a class="nav-link ml-0 nav-text-item" asp-controller="Admin" asp-action="CreateProduct">Ürün Ekle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-0 nav-text-item" asp-controller="Admin" asp-action="ProductList">Ürün Düzenle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-0 nav-text-item" asp-controller="Admin" asp-action="CreateCategory">Kategori Ekle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-0 nav-text-item" asp-controller="Admin" asp-action="CategoryList">Kategori Düzenle</a>
+                    </li>
+                }
+            }
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            @if (User.Identity.IsAuthenticated)
+            {
+                <li class="nav-item">
+                    <a class="nav-link nav-text-item font-italic font-weight-bold text-primary" asp-controller="Manage">
+                        @User.Identity.Name
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-text-item" asp-controller="Account" asp-action="Logout">Çıkış</a>
+                </li>
+            }
+            else
+            {
+                <li class="nav-item ">
+                    <a id="simple_menu" class="nav-link nav-text-item font-italic font-weight-bold text-primary" asp-controller="Account" asp-action="Login">Giriş</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-text-item font-italic font-weight-bold text-primary" asp-controller="Account" asp-action="Register">Kayıt</a>
+                </li>
+            }
+        </ul>
+        @*<form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+            </form>*@
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>

@@ -1,0 +1,102 @@
+﻿@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+@section Scripts {
+    <script src="\modules\jquery-validation\dist\jquery.validate.min.js"></script>
+    <script src="\modules\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js"></script>
+    } 
+
+<style>
+    .bg-gradient-primary {
+        background-color: #808080;
+        background-image: linear-gradient(180deg,#808080 10%,#ffffff 100%);
+        background-size: auto;
+    }
+
+    .md-form label{
+        color:#ffffff ;        
+    }
+    .card{
+        background-color:rgba(126,123,215,0.2);
+    }
+    .btn-user{
+            font-size:1.2rem;
+            border-radius:10rem;
+            padding:0.5rem 1rem;
+        }
+</style>
+<body class="bg-gradient-primary">
+    <h3><i class="fas fa-user white-text"></i> Kayıt Paneli</h3>
+    <hr />
+    <div class="row card wow fadeInRight" data-wow-delay="0.3s">
+        <div class="col-md-8 card-body">
+            @if (ViewBag.ErrorMessage != null)
+            {
+                <div class="text-danger">@ViewBag.ErrorMessage</div>
+            }
+
+            <form asp-controller="Account" asp-action="Register" method="post">
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="form-group row">
+                    <i class="fas fa-user prefix white-text active"></i>
+                    <label asp-for="FullName" class="col-md-2 col-form-label"></label>
+                    <div class="col-md-10">
+
+                        <input asp-for="FullName" value="@Model.FullName" class="form-control" />
+
+                        <span asp-validation-for="FullName" class="text-danger"></span>
+
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <i class="fas fa-user prefix white-text active"></i>
+                    <label asp-for="Username" class="col-md-2 col-form-label"></label>
+                    <div class="col-md-10">
+                        <input asp-for="Username" value="@Model.Username" class="form-control" placeholder="Kullanıcı adı oluşturunuz.." />
+                        <span asp-validation-for="Username" class="text-danger"></span>
+                    </div>
+                </div>
+
+
+                <div class="form-group row">
+                    <i class="fas fa-envelope prefix white-text active"></i>
+                    <label asp-for="Email" class="col-md-2 col-form-label"></label>
+                    <div class="col-md-10">
+                        <input asp-for="Email" value="@Model.Email" class="form-control" placeholder="Kullandığınız email adresini girin.." />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                </div>
+
+
+                <div class="form-group row">
+                    <i class="fas fa-lock prefix white-text active"></i>
+                    <label asp-for="Password" class="col-md-2 col-form-label"></label>
+                    <div class="col-md-10">
+                        <input asp-for="Password" value="@Model.Password" class="form-control" placeholder="Şifrenizi Oluşturunuz.." />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <i class="fas fa-lock prefix white-text active"></i>
+                    <label asp-for="RePassword" class="col-md-2 col-form-label"></label>
+                    <div class="col-md-10">
+                        <input asp-for="RePassword" value="@Model.RePassword" class="form-control" placeholder="Doğrulamak için tekrar şifrenizi giriniz.." />
+                        <span asp-validation-for="RePassword" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group row">
+
+                    <div class="col-md-10 offset-md-2">
+                        <button type="submit" class="btn btn-outline-info btn-user btn-lg my-4 wawes-effect ">Kayıt Ol</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+
+</body>
+

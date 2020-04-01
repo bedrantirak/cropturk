@@ -1,0 +1,8 @@
+C:\Users\bdrnt\source\repos\ShopApp\ShopApp.Business\bin\Debug\netcoreapp3.0\ShopApp.Business.deps.json
+C:\Users\bdrnt\source\repos\ShopApp\ShopApp.Business\bin\Debug\netcoreapp3.0\ShopApp.Business.dll
+C:\Users\bdrnt\source\repos\ShopApp\ShopApp.Business\bin\Debug\netcoreapp3.0\ShopApp.Business.pdb
+C:\Users\bdrnt\source\repos\ShopApp\ShopApp.Business\obj\Debug\netcoreapp3.0\ShopApp.Business.csprojAssemblyReference.cache
+C:\Users\bdrnt\source\repos\ShopApp\ShopApp.Business\obj\Debug\netcoreapp3.0\ShopApp.Business.AssemblyInfoInputs.cache
+C:\Users\bdrnt\source\repos\ShopApp\ShopApp.Business\obj\Debug\netcoreapp3.0\ShopApp.Business.AssemblyInfo.cs
+C:\Users\bdrnt\source\repos\ShopApp\ShopApp.Business\obj\Debug\netcoreapp3.0\ShopApp.Business.dll
+C:\Users\bdrnt\source\repos\ShopApp\ShopApp.Business\obj\Debug\netcoreapp3.0\ShopApp.Business.pdb

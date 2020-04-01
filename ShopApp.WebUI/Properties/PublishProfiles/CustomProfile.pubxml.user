@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\bdrnt\Desktop\MyShopApp</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Controllers/AccountController.cs">
+      <publishTime>12/04/2019 17:49:55</publishTime>
+    </File>
+    <File Include="Controllers/AdminController.cs">
+      <publishTime>12/11/2019 15:54:35</publishTime>
+    </File>
+    <File Include="Controllers/CartController.cs">
+      <publishTime>12/11/2019 16:52:02</publishTime>
+    </File>
+    <File Include="Controllers/HomeController.cs">
+      <publishTime>12/03/2019 13:32:58</publishTime>
+    </File>
+    <File Include="Controllers/ShopController.cs">
+      <publishTime>12/03/2019 14:56:39</publishTime>
+    </File>
+    <File Include="Models/CartModel.cs">
+      <publishTime>12/03/2019 13:08:15</publishTime>
+    </File>
+    <File Include="Models/CategoryListModel.cs">
+      <publishTime>12/02/2019 15:04:11</publishTime>
+    </File>
+    <File Include="Models/CategoryListViewModel.cs">
+      <publishTime>12/02/2019 15:04:12</publishTime>
+    </File>
+    <File Include="Models/CategoryModel.cs">
+      <publishTime>12/02/2019 15:07:23</publishTime>
+    </File>
+    <File Include="Models/LoginModel.cs">
+      <publishTime>12/02/2019 15:04:06</publishTime>
+    </File>
+    <File Include="Models/OrderListModel.cs">
+      <publishTime>12/02/2019 15:11:50</publishTime>
+    </File>
+    <File Include="Models/OrderModel.cs">
+      <publishTime>11/27/2019 13:00:10</publishTime>
+    </File>
+    <File Include="Models/ProductDetailsModel.cs">
+      <publishTime>12/02/2019 15:14:53</publishTime>
+    </File>
+    <File Include="Models/ProductListModel.cs">
+      <publishTime>12/04/2019 13:58:11</publishTime>
+    </File>
+    <File Include="Models/ProductModel.cs">
+      <publishTime>11/22/2019 16:23:13</publishTime>
+    </File>
+    <File Include="Models/RegisterModel.cs">
+      <publishTime>12/04/2019 12:44:13</publishTime>
+    </File>
+    <File Include="Models/ResetPasswordModel.cs">
+      <publishTime>11/25/2019 15:30:03</publishTime>
+    </File>
+    <File Include="Models/ResultMessage.cs">
+      <publishTime>11/25/2019 15:58:43</publishTime>
+    </File>
+    <File Include="ViewComponents/CategoryListViewComponent.cs">
+      <publishTime>11/21/2019 13:12:39</publishTime>
+    </File>
+    <File Include="Views/Account/ForgotPassword.cshtml">
+      <publishTime>12/06/2019 10:39:32</publishTime>
+    </File>
+    <File Include="Views/Account/Login.cshtml">
+      <publishTime>12/06/2019 10:39:30</publishTime>
+    </File>
+    <File Include="Views/Account/Register.cshtml">
+      <publishTime>12/06/2019 10:39:28</publishTime>
+    </File>
+    <File Include="Views/Account/ResetPassword.cshtml">
+      <publishTime>12/06/2019 10:39:25</publishTime>
+    </File>
+    <File Include="Views/Admin/CategoryList.cshtml">
+      <publishTime>12/04/2019 16:19:40</publishTime>
+    </File>
+    <File Include="Views/Admin/CreateCategory.cshtml">
+      <publishTime>12/04/2019 16:20:24</publishTime>
+    </File>
+    <File Include="Views/Admin/CreateProduct.cshtml">
+      <publishTime>12/04/2019 16:21:11</publishTime>
+    </File>
+    <File Include="Views/Admin/EditCategory.cshtml">
+      <publishTime>12/04/2019 16:21:49</publishTime>
+    </File>
+    <File Include="Views/Admin/EditProduct.cshtml">
+      <publishTime>12/04/2019 16:22:24</publishTime>
+    </File>
+    <File Include="Views/Admin/ProductList.cshtml">
+      <publishTime>12/04/2019 16:22:46</publishTime>
+    </File>
+    <File Include="Views/Cart/Checkout.cshtml">
+      <publishTime>12/11/2019 15:29:56</publishTime>
+    </File>
+    <File Include="Views/Cart/GetOrders.cshtml">
+      <publishTime>12/06/2019 10:41:22</publishTime>
+    </File>
+    <File Include="Views/Cart/Index.cshtml">
+      <publishTime>12/06/2019 10:38:10</publishTime>
+    </File>
+    <File Include="Views/Cart/Success.cshtml">
+      <publishTime>12/06/2019 10:38:18</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>12/12/2019 11:20:13</publishTime>
+    </File>
+    <File Include="Views/Shared/Components/CategoryList/Default.cshtml">
+      <publishTime>12/09/2019 14:45:36</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>12/06/2019 15:44:25</publishTime>
+    </File>
+    <File Include="Views/Shared/_navbar.cshtml">
+      <publishTime>12/09/2019 15:30:01</publishTime>
+    </File>
+    <File Include="Views/Shared/_product.cshtml">
+      <publishTime>12/09/2019 14:47:30</publishTime>
+    </File>
+    <File Include="Views/Shared/_resultmessage.cshtml">
+      <publishTime>11/25/2019 16:53:53</publishTime>
+    </File>
+    <File Include="Views/Shared/_slider.cshtml">
+      <publishTime>12/09/2019 15:40:48</publishTime>
+    </File>
+    <File Include="Views/Shop/Details.cshtml">
+      <publishTime>12/09/2019 15:46:45</publishTime>
+    </File>
+    <File Include="Views/Shop/List.cshtml">
+      <publishTime>12/06/2019 10:42:55</publishTime>
+    </File>
+    <File Include="Views/_ViewImports.cshtml">
+      <publishTime>11/25/2019 16:30:24</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>11/20/2019 14:36:10</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,36 @@
+﻿@model CategoryListViewModel
+
+<h4 class="category-text mb-3 mt-1 category-head">Kategori</h4>
+<style>
+     .bg-gradient-primary-c {
+        background-color: #808080;
+        background-image: linear-gradient(180deg,#808080 10%,#ffffff 100%);        
+        border-radius:10px;
+        border-color:black;
+        box-shadow:5px 5px 4px black,10px 10px 25px white,0 10px 10px white;
+    }
+     .category-text{
+         color:black;
+        
+       }
+     .category-head{
+       
+    text-shadow:5px 2px 5px white,0 0 50px white,0 0 20px white;
+     }
+</style>
+<div class="list-group">
+
+
+    @foreach (var item in Model.Categories)
+    {
+
+        <a asp-controller="Shop"
+           asp-action="List"
+           asp-route-category="@item.Name.ToLower()"
+           class="list-group-item bg-gradient-primary-c category-text list-group-item-action mb-2 font-italic @(Model.SelectedCategory==item.Name.ToLower()?"active": "")">
+            <i class="fas fa-chevron-right"></i> @item.Name
+        </a>
+    }
+
+
+</div>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\bdrnt\Desktop\deneme7</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Views/Account/ForgotPassword.cshtml">
+      <publishTime>06/12/2019 10:39:32</publishTime>
+    </File>
+    <File Include="Views/Account/Login.cshtml">
+      <publishTime>06/12/2019 10:39:30</publishTime>
+    </File>
+    <File Include="Views/Account/Register.cshtml">
+      <publishTime>06/12/2019 10:39:28</publishTime>
+    </File>
+    <File Include="Views/Account/ResetPassword.cshtml">
+      <publishTime>06/12/2019 10:39:25</publishTime>
+    </File>
+    <File Include="Views/Admin/CategoryList.cshtml">
+      <publishTime>04/12/2019 16:19:40</publishTime>
+    </File>
+    <File Include="Views/Admin/CreateCategory.cshtml">
+      <publishTime>04/12/2019 16:20:24</publishTime>
+    </File>
+    <File Include="Views/Admin/CreateProduct.cshtml">
+      <publishTime>04/12/2019 16:21:11</publishTime>
+    </File>
+    <File Include="Views/Admin/EditCategory.cshtml">
+      <publishTime>04/12/2019 16:21:49</publishTime>
+    </File>
+    <File Include="Views/Admin/EditProduct.cshtml">
+      <publishTime>04/12/2019 16:22:24</publishTime>
+    </File>
+    <File Include="Views/Admin/ProductList.cshtml">
+      <publishTime>04/12/2019 16:22:46</publishTime>
+    </File>
+    <File Include="Views/Cart/Checkout.cshtml">
+      <publishTime>11/12/2019 15:29:56</publishTime>
+    </File>
+    <File Include="Views/Cart/GetOrders.cshtml">
+      <publishTime>06/12/2019 10:41:22</publishTime>
+    </File>
+    <File Include="Views/Cart/Index.cshtml">
+      <publishTime>06/12/2019 10:38:10</publishTime>
+    </File>
+    <File Include="Views/Cart/Success.cshtml">
+      <publishTime>06/12/2019 10:38:18</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>12/12/2019 11:20:13</publishTime>
+    </File>
+    <File Include="Views/Shared/Components/CategoryList/Default.cshtml">
+      <publishTime>09/12/2019 14:45:36</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>06/12/2019 15:44:25</publishTime>
+    </File>
+    <File Include="Views/Shared/_navbar.cshtml">
+      <publishTime>09/12/2019 15:30:01</publishTime>
+    </File>
+    <File Include="Views/Shared/_product.cshtml">
+      <publishTime>09/12/2019 14:47:30</publishTime>
+    </File>
+    <File Include="Views/Shared/_resultmessage.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/Shared/_slider.cshtml">
+      <publishTime>09/12/2019 15:40:48</publishTime>
+    </File>
+    <File Include="Views/Shop/Details.cshtml">
+      <publishTime>09/12/2019 15:46:45</publishTime>
+    </File>
+    <File Include="Views/Shop/List.cshtml">
+      <publishTime>06/12/2019 10:42:55</publishTime>
+    </File>
+    <File Include="Views/_ViewImports.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
