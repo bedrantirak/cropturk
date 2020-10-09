@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bdrnt\\source\\repos\\ShopApp\\ShopApp.Entities\\ShopApp.Entities.csproj",
+      "projectUniqueName": "C:\\Users\\bdrnt\\Desktop\\cropturk\\ShopApp.Entities\\ShopApp.Entities.csproj",
       "projectName": "ShopApp.Entities",
-      "projectPath": "C:\\Users\\bdrnt\\source\\repos\\ShopApp\\ShopApp.Entities\\ShopApp.Entities.csproj",
+      "projectPath": "C:\\Users\\bdrnt\\Desktop\\cropturk\\ShopApp.Entities\\ShopApp.Entities.csproj",
       "packagesPath": "C:\\Users\\bdrnt\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bdrnt\\source\\repos\\ShopApp\\ShopApp.Entities\\obj\\",
+      "outputPath": "C:\\Users\\bdrnt\\Desktop\\cropturk\\ShopApp.Entities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

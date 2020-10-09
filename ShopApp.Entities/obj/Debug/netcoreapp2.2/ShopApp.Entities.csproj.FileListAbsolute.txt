@@ -7,3 +7,12 @@ C:\Users\bdrnt\source\repos\ShopApp\ShopApp.Entities\obj\Debug\netcoreapp2.2\Sho
 C:\Users\bdrnt\source\repos\ShopApp\ShopApp.Entities\obj\Debug\netcoreapp2.2\ShopApp.Entities.pdb
 C:\Users\bdrnt\source\repos\ShopApp\ShopApp.Entities\obj\Debug\netcoreapp2.2\ShopApp.Entities.csprojAssemblyReference.cache
 C:\Users\bdrnt\source\repos\ShopApp\ShopApp.Entities\obj\Debug\netcoreapp2.2\ShopApp.Entities.csproj.CoreCompileInputs.cache
+C:\Users\bdrnt\Desktop\cropturk\ShopApp.Entities\bin\Debug\netcoreapp2.2\ShopApp.Entities.deps.json
+C:\Users\bdrnt\Desktop\cropturk\ShopApp.Entities\bin\Debug\netcoreapp2.2\ShopApp.Entities.dll
+C:\Users\bdrnt\Desktop\cropturk\ShopApp.Entities\bin\Debug\netcoreapp2.2\ShopApp.Entities.pdb
+C:\Users\bdrnt\Desktop\cropturk\ShopApp.Entities\obj\Debug\netcoreapp2.2\ShopApp.Entities.csprojAssemblyReference.cache
+C:\Users\bdrnt\Desktop\cropturk\ShopApp.Entities\obj\Debug\netcoreapp2.2\ShopApp.Entities.csproj.CoreCompileInputs.cache
+C:\Users\bdrnt\Desktop\cropturk\ShopApp.Entities\obj\Debug\netcoreapp2.2\ShopApp.Entities.AssemblyInfoInputs.cache
+C:\Users\bdrnt\Desktop\cropturk\ShopApp.Entities\obj\Debug\netcoreapp2.2\ShopApp.Entities.AssemblyInfo.cs
+C:\Users\bdrnt\Desktop\cropturk\ShopApp.Entities\obj\Debug\netcoreapp2.2\ShopApp.Entities.dll
+C:\Users\bdrnt\Desktop\cropturk\ShopApp.Entities\obj\Debug\netcoreapp2.2\ShopApp.Entities.pdb

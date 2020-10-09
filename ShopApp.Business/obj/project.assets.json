@@ -3509,11 +3509,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bdrnt\\source\\repos\\ShopApp\\ShopApp.Business\\ShopApp.Business.csproj",
+      "projectUniqueName": "C:\\Users\\bdrnt\\Desktop\\cropturk\\ShopApp.Business\\ShopApp.Business.csproj",
       "projectName": "ShopApp.Business",
-      "projectPath": "C:\\Users\\bdrnt\\source\\repos\\ShopApp\\ShopApp.Business\\ShopApp.Business.csproj",
+      "projectPath": "C:\\Users\\bdrnt\\Desktop\\cropturk\\ShopApp.Business\\ShopApp.Business.csproj",
       "packagesPath": "C:\\Users\\bdrnt\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bdrnt\\source\\repos\\ShopApp\\ShopApp.Business\\obj\\",
+      "outputPath": "C:\\Users\\bdrnt\\Desktop\\cropturk\\ShopApp.Business\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3532,11 +3532,11 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\bdrnt\\source\\repos\\ShopApp\\ShopApp.DataAccess\\ShopApp.DataAccess.csproj": {
-              "projectPath": "C:\\Users\\bdrnt\\source\\repos\\ShopApp\\ShopApp.DataAccess\\ShopApp.DataAccess.csproj"
+            "C:\\Users\\bdrnt\\Desktop\\cropturk\\ShopApp.DataAccess\\ShopApp.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\bdrnt\\Desktop\\cropturk\\ShopApp.DataAccess\\ShopApp.DataAccess.csproj"
             },
-            "C:\\Users\\bdrnt\\source\\repos\\ShopApp\\ShopApp.Entities\\ShopApp.Entities.csproj": {
-              "projectPath": "C:\\Users\\bdrnt\\source\\repos\\ShopApp\\ShopApp.Entities\\ShopApp.Entities.csproj"
+            "C:\\Users\\bdrnt\\Desktop\\cropturk\\ShopApp.Entities\\ShopApp.Entities.csproj": {
+              "projectPath": "C:\\Users\\bdrnt\\Desktop\\cropturk\\ShopApp.Entities\\ShopApp.Entities.csproj"
             }
           }
         }
